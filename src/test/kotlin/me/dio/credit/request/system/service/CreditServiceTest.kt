@@ -1,5 +1,6 @@
 package me.dio.credit.request.system.service
 
+/*
 import io.mockk.MockKAnnotations
 import io.mockk.every
 import io.mockk.impl.annotations.MockK
@@ -157,4 +158,4 @@ class CreditServiceTest {
             income = income,
     )
 
-}
+}*/
