@@ -17,7 +17,7 @@ data class CustomerDto(
         @field:NotEmpty(message = "O campo deve ser preenchido.")
         @field:Email(message = "Não foi digitado um email válido.") val email: String,
         @field:NotEmpty(message = "O campo deve ser preenchido.") val password: String,
-        @field:NotEmpty(message = "O campo deve ser preenchido.") val zipcode: String,
+        @field:NotEmpty(message = "O campo deve ser preenchido.") val zipCode: String,
         @field:NotEmpty(message = "O campo deve ser preenchido.") val street: String,
 ) {
 
@@ -29,7 +29,7 @@ data class CustomerDto(
             email = this.email,
             password = this.password,
             address = Address(
-                    zipCode = this.zipcode,
+                    zipCode = this.zipCode,
                     street = this.street
             )
 

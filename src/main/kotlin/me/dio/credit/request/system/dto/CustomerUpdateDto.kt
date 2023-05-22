@@ -9,7 +9,7 @@ data class CustomerUpdateDto(
         @field:NotEmpty(message = "O campo deve ser preenchido.") val firstName: String,
         @field:NotEmpty(message = "O campo deve ser preenchido.") val lastName: String,
         @field:NotNull val income: BigDecimal,
-        @field:NotEmpty(message = "O campo deve ser preenchido.") val zipcode: String,
+        @field:NotEmpty(message = "O campo deve ser preenchido.") val zipCode: String,
         @field:NotEmpty(message = "O campo deve ser preenchido.") val street: String
 ) {
     fun toEntity(customer: Customer): Customer {
@@ -17,7 +17,7 @@ data class CustomerUpdateDto(
         customer.lastName = this.lastName
         customer.income = this.income
         customer.address.street = this.street
-        customer.address.zipCode = this.zipcode
+        customer.address.zipCode = this.zipCode
         return customer
     }
 }
