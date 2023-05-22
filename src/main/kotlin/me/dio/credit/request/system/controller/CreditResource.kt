@@ -39,7 +39,7 @@ class CreditResource(
         return  ResponseEntity.status(HttpStatus.OK).body(creditViewList)
     }
 
-    @GetMapping("/creditCode")
+    @GetMapping("/{creditCode}")
         fun findByCreditCode(@RequestParam(value = "customerId") customerId: Long,
                              @PathVariable creditCode: UUID
         ): ResponseEntity<CreditView> {
